@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1714"><title>FoodBase — Eat smarter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="welcome" class="welcome">
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="welcome-head"><div class="logo-mark">F<span>✳</span></div><span class="micro">YOUR FOOD, DECODED</span></header>
+  <main class="welcome-main">
+    <div class="welcome-symbol">🥑</div><p class="eyebrow" data-t="welcomeEyebrow">WELCOME TO FOODBASE</p>
+    <h1 data-t="welcomeTitle">طعامك، بشكل أذكى.</h1>
+    <p class="welcome-copy" data-t="welcomeCopy">اكتشف أكلك، افهم قيمته الغذائية، وخلي اختياراتك أذكى كل يوم.</p>
+    <label class="field-label" data-t="languageLabel">اختار اللغة / Choose your language</label>
+    <div class="language-picks">
+      <button class="lang-pick chosen" data-lang="ar"><span class="lang-icon">ع</span><span><b>العربية</b><small>Arabic</small></span><span class="tick">✓</span></button>
+      <button class="lang-pick" data-lang="en"><span class="lang-icon">EN</span><span><b>English</b><small>English</small></span><span class="tick">✓</span></button>
+    </div>
+    <form id="welcomeForm"><label for="nameInput" class="field-label" data-t="nameLabel">اسمك إيه؟</label>
+      <div class="name-entry"><span>✦</span><input id="nameInput" maxlength="32" required data-ph="namePlaceholder" placeholder="اكتب اسمك هنا"><button class="enter-btn" type="submit" aria-label="Continue">↗</button></div>
+      <p class="privacy" data-t="privacy">اسمك بيتحفظ على جهازك بس علشان نرحب بيك.</p>
+    </form>
+  </main>
+  <footer class="welcome-foot"><span>FOODBASE © 2026</span><span data-t="welcomeFoot">MADE FOR CURIOUS EATERS</span></footer>
+</section>
+
+<div id="site" class="site hidden">
+  <aside id="sidebar" class="sidebar">
+    <div class="brand"><div class="logo-mark">F<span>✳</span></div><div>Food<span>Base</span><small>FOOD KNOWLEDGE, REIMAGINED</small></div></div>
+    <p class="side-label" data-t="mainMenu">القائمة الرئيسية</p>
+    <button class="nav active" data-view="discover"><span>⌂</span><span data-t="discover">اكتشف</span></button>
+    <button class="nav" data-view="favorites"><span>♡</span><span data-t="favorites">المفضلة</span><i id="favCount">0</i></button>
+    <button class="nav" data-view="compare"><span>⇄</span><span data-t="compare">مقارنة الأطعمة</span></button>
+    <p class="side-label categories-label" data-t="categories">الأقسام</p><div id="sideCategories" class="side-categories"></div>
+    <div class="side-bottom"><div class="tip"><b>✦ <span data-t="smartTip">اختيارات أذكى كل يوم</span></b><p data-t="tipCopy">القيم الغذائية تقديرية وقد تختلف حسب الوصفة.</p></div><button id="switchLang" class="switch-lang">◎ <span data-t="changeLang">تغيير اللغة</span><span>↗</span></button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button id="mobileMenu" class="mobile-menu">☰</button><div class="crumb"><span data-t="home">الرئيسية</span><span>/</span><b id="crumb" data-t="discover">اكتشف</b></div><div class="top-right"><button id="topLang" class="top-lang">ع / EN</button><div class="user"><div id="avatar" class="avatar">F</div><div><b id="greeting">أهلًا!</b><small data-t="foodExplorer">مستكشف الطعام</small></div></div></div></header>
+    <section id="discoverView" class="view">
+      <section class="hero"><div class="hero-copy-wrap"><div class="hero-kicker"><i></i><span data-t="heroKicker">موسوعة طعامك اليومية</span></div><h1><span data-t="hero1">كل لقمة</span><br><em data-t="hero2">وراها حكاية.</em></h1><p data-t="heroText">من البرجر والبيتزا لصدور البانيه والفاكهة الطازة — اكتشف تفاصيل أكلك.</p><div class="hero-stats"><div><b id="totalFoods">80+</b><span data-t="foodItems">صنف طعام</span></div><i></i><div><b>12</b><span data-t="foodCategories">قسم متنوع</span></div><i></i><div><b>4</b><span data-t="nutritionFacts">قيم غذائية</span></div></div></div>
+        <div class="hero-art"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Colorful food bowl"><div class="photo-caption"><span>✦ <span data-t="todayPick">اختيار اليوم</span></span><b data-t="balancedMeal">وجبة متوازنة</b><small data-t="balancedDesc">ألوان طبيعية • تنوع غذائي</small></div></div><span class="float-pill pill-a">◈ <span data-t="protein">بروتين</span></span><span class="float-pill pill-b">✳ <span data-t="fresh">طازة</span></span><span class="floating-emoji">🥦</span></div>
+      </section>
+      <div class="section-head"><div><p class="eyebrow">EXPLORE THE DATABASE</p><h2 data-t="exploreFoods">اكتشف الأطعمة</h2><p class="muted" data-t="exploreSub">دور على أكلك المفضل واعرف تفاصيله الغذائية.</p></div><div class="count"><b id="resultCount">0</b> <span data-t="results">نتيجة</span></div></div>
+      <div class="toolbar"><div class="search"><span>⌕</span><input id="search" type="search" data-ph="searchPlaceholder" placeholder="دور على أكلة..."><kbd>⌘ K</kbd></div><select id="sort"><option value="featured" data-t="sortFeatured">ترتيب مقترح</option><option value="calories" data-t="sortCalories">الأقل سعرات</option><option value="protein" data-t="sortProtein">الأعلى بروتين</option><option value="name" data-t="sortName">الاسم أبجديًا</option></select></div>
+      <div id="chips" class="chips"></div><div id="foodGrid" class="food-grid"></div>
+      <div id="noResults" class="empty hidden"><span>🍽️</span><h3 data-t="noResults">ملقيناش الأكلة دي</h3><p data-t="noResultsText">جرّب كلمة تانية أو اختار قسم مختلف.</p></div>
+    </section>
+    <section id="favoritesView" class="view hidden"><div class="page-title"><p class="eyebrow">YOUR COLLECTION</p><h1 data-t="favoritesTitle">الأطعمة المفضلة</h1><p class="muted" data-t="favoritesSub">كل الأكلات اللي حفظتها في مكان واحد.</p></div><div id="favoritesGrid" class="food-grid"></div><div id="favoritesEmpty" class="empty"><span>♡</span><h3 data-t="favoritesEmpty">لسه مفيش مفضلة</h3><p data-t="favoritesEmptyText">اضغط على القلب في أي أكلة علشان تحفظها هنا.</p></div></section>
+    <section id="compareView" class="view hidden"><div class="page-title"><p class="eyebrow">FOOD SIDE BY SIDE</p><h1 data-t="compareTitle">قارن بين الأطعمة</h1><p class="muted" data-t="compareSub">اختار صنفين وقارن القيم الغذائية لكل 100 جرام.</p></div><div class="compare-selects"><label><span data-t="foodOne">الأكلة الأولى</span><select id="foodA"></select></label><label><span data-t="foodTwo">الأكلة الثانية</span><select id="foodB"></select></label></div><div id="compareResult" class="compare-result"></div><p class="disclaimer" data-t="disclaimer">القيم تقديرية لكل 100 جرام، وقد تختلف حسب المكونات وطريقة التحضير.</p></section>
+    <footer class="footer"><span>FOODBASE <b>✳</b></span><span data-t="footerText">اعرف أكلك. اختار بوعي.</span><button id="editName" data-t="editName">تغيير الاسم</button></footer>
+  </main>
+</div>
+<div id="modal" class="modal-bg hidden" role="dialog" aria-modal="true"><article class="modal"><button id="closeModal" class="close-modal">×</button><div id="modalContent"></div></article></div>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body></html>
